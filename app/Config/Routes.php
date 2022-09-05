@@ -39,7 +39,6 @@ $routes->set404Override();
 $routes->group('/', ['namespace' => 'App\Controllers\Front'], function($routes){
 
     $routes->get('', 'Home::index');
-    $routes->get('/libreria', 'Home::sayHola');
 });
 
 
