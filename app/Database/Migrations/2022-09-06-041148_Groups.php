@@ -9,7 +9,7 @@ class Groups extends Migration
     public function up()
     {
         $this->forge->addField([
-            'in_group' => [
+            'id_group' => [
                 'type'           => 'INT',
                 'constraint'     => 12,
                 'unsigned'       => true,

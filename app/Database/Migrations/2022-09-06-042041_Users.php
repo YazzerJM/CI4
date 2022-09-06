@@ -47,6 +47,7 @@ class Users extends Migration
         ]);
 
         $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('group', 'groups', 'id_group', 'CASCADE', 'CASCADE');
         $this->forge->createTable('users');
     }
 
